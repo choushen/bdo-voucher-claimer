@@ -1,6 +1,4 @@
-GitHub Copilot: Sure, here's an example README file for your project:
-
-# Project Name
+# BDO Voucher Claimer
 
 This project is a Python script that scrapes promotional codes from https://garmoth.com/coupons and enters them into your account.
 
