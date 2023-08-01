@@ -47,7 +47,7 @@ def input_codes(codes: list):
     for code in codes:
 
         input_redeem_code_box1.send_keys(code)
-        input_redeem_code_box1.submit()
+        btn_redeem_code.submit()
 
         list.pop(code)
 
@@ -62,6 +62,7 @@ def input_codes(codes: list):
 
         reset_input_box()
 
+# TODO: Handle the case where the code is valid
 
 def reset_input_box():
     input_redeem_code_box1.clear()
