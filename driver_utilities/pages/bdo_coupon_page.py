@@ -55,14 +55,19 @@ def input_codes(codes: list):
 
         alert = Driver._driver.switch_to.alert
         
-        if(alert and alert.text == "Invalid coupon code."):
+        if(alert.text.to_lower().contains("invalid")):
             result["result"] = alert.text
             result["code"] = code
             alert.accept()
+            reset_input_box()
+        else:
+            result["result"] = alert.text
+            result["code"] = code
+            alert.accept()
+            Driver._driver.implicitly_wait(2)
+            Driver._driver.get('https://payment.naeu.playblackdesert.com/en-US/Shop/Coupon')
+    return result
 
-        reset_input_box()
-
-# TODO: Handle the case where the code is valid
 
 def reset_input_box():
     input_redeem_code_box1.clear()

@@ -7,7 +7,13 @@ from gui import interface
 
 codes:list = get_codes()
 
+# Testing code
 for code in codes:
     print(code)
-    
-interface.start
+
+
+result = input_codes(codes)
+
+for code in result:
+    print(code)
+#interface.start
