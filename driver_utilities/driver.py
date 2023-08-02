@@ -25,5 +25,3 @@ class Driver:
         if cls._driver:
             cls._driver.quit()
             cls._driver = None
-        
-    

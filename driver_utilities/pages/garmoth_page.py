@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from driver_utilities.driver import Driver
 
+
 # Properties
 url = 'https://garmoth.com/coupons'
 xpath_coupon_id = "//section//h2[text()='Available']/..//input"
@@ -10,7 +11,7 @@ xpath_coupon_id = "//section//h2[text()='Available']/..//input"
 
 def get_codes():
     
-    Driver.instantiate_driver()
+    #Driver.instantiate_driver()
     # Use driver to navigate to a website:
     Driver._driver.get(url)
 
