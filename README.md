@@ -23,7 +23,7 @@ pip install -r requirements.txt
 To install this script, simply clone this repository to your local machine:
 
 ```
-git clone https://github.com/choushen/your-repository.git
+git clone [https://github.com/choushen/your-repository.git](https://github.com/choushen/bdo-voucher-claimer)
 ```
 
 ### Usage
